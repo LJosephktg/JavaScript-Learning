@@ -1,0 +1,45 @@
+<html>
+<head>
+
+
+</head>
+<title> JavaScript</title>
+<h1> Welcome to JavaScript </h1>
+<script>
+	
+	function sample(add){
+		
+		return "Hello "+add;	
+	}
+	document.write(sample("World "));
+	
+	function cal(){
+
+		//const ctime = new date();
+		//document.write(ctime);
+		
+		var a = 12, b = 123;
+		document.write("Sum of values is :"+(a+b)+ "and multiplication is :"+
+		(a*b)+ " ");	
+	}
+	
+	function times(){
+		
+		document.getElementById('demo').innerHTML = Date();
+	}
+
+
+</script>
+<body>
+	
+	<button type="button" onclick="times()"> click for current time</button>
+	<p id="demo"> </p>
+	
+	<h2> On Mouse Over</h2>
+	
+	<button type="button" onmouseover="cal()"> Drag Here </button>
+	
+	
+</body>
+
+</html>
